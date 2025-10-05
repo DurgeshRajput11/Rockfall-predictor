@@ -1,0 +1,5 @@
+pymongo[srv]==3.6
+dnspython==1.16.0
+python-dotenv
+pymongo
+certifi

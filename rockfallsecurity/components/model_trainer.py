@@ -37,7 +37,8 @@ class ModelTrainer:
             mlflow.log_metric("f1_score", classification_metric.f1_score)
             mlflow.log_metric("precision", classification_metric.precision_score)
             mlflow.log_metric("recall_score", classification_metric.recall_score)
-            mlflow.sklearn.log_model(best_model, "model")
+            mlflow.sklearn.log_model(best_model, name="model")
+            
 
     def train_model(self, X_train, y_train, X_test, y_test):
         # Check class imbalance

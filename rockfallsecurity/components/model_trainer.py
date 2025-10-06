@@ -3,7 +3,6 @@ import sys
 import mlflow
 from urllib.parse import urlparse
 import dagshub
-
 from rockfallsecurity.entity.artifact_entity import DataTransformationArtifact, ModelTrainerArtifact
 from rockfallsecurity.entity.config_entity import ModelTrainerConfig
 from rockfallsecurity.exception.exception import RockfallSafetyException
@@ -32,12 +31,12 @@ class ModelTrainer:
             raise RockfallSafetyException(e, sys)
 
     def track_mlflow(self, best_model, classification_metric):
-    # Tracking URI is set globally in main.py
+    #TrackingURI is setglobally in main.py
         with mlflow.start_run():
             mlflow.log_metric("f1_score", classification_metric.f1_score)
             mlflow.log_metric("precision", classification_metric.precision_score)
             mlflow.log_metric("recall_score", classification_metric.recall_score)
-            mlflow.sklearn.log_model(best_model, name="model")
+            mlflow.sklearn.log_model(best_model, artifact_path="model")
             
 
     def train_model(self, X_train, y_train, X_test, y_test):

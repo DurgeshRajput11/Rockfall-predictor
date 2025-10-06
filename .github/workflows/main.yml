@@ -20,15 +20,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Python environment
-      # Specifies the Python version to use
       - name: Set up Python 3.9
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-        # Debug: Show requirements.txt contents
-        - name: Show requirements.txt
-          run: cat requirements.txt
+
+      - name: Show requirements.txt
+        run: cat requirements.txt
 
       # Step 3: Install all project dependencies
       # This command reads your requirements.txt file and installs the packages

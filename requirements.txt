@@ -5,8 +5,12 @@ pymongo
 certifi
 xgboost
 PyYAML
-scikit
+scikit-learn
 numpy
 pandas
 mlflow
 dagshub
+imblearn
+
+
+

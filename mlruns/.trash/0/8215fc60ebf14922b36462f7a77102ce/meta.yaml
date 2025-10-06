@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/8215fc60ebf14922b36462f7a77102ce/artifacts
+end_time: 1759730793224
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8215fc60ebf14922b36462f7a77102ce
+run_name: handsome-fox-722
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759730785353
+status: 3
+tags: []
+user_id: dsgau

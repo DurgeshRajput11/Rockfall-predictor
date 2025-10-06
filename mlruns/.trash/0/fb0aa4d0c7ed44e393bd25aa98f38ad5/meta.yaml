@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/fb0aa4d0c7ed44e393bd25aa98f38ad5/artifacts
+end_time: 1759730785302
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fb0aa4d0c7ed44e393bd25aa98f38ad5
+run_name: gaudy-newt-686
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759730774062
+status: 3
+tags: []
+user_id: dsgau

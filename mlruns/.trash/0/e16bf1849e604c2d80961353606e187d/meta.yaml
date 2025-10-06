@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/e16bf1849e604c2d80961353606e187d/artifacts
+end_time: 1759730277752
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e16bf1849e604c2d80961353606e187d
+run_name: wistful-dolphin-963
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759730270589
+status: 3
+tags: []
+user_id: dsgau

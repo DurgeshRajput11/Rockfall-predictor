@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/f52a363aa5504a96a99d44b569585b36/artifacts
+end_time: 1759728360794
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f52a363aa5504a96a99d44b569585b36
+run_name: skittish-bee-25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759728348531
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/c53f254fe8e144efb48554b714db9bb4/artifacts
+end_time: 1759734816015
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c53f254fe8e144efb48554b714db9bb4
+run_name: delicate-crane-229
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759734815888
+status: 4
+tags: []
+user_id: dsgau

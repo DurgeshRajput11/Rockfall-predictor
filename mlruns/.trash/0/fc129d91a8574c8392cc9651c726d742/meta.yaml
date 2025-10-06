@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/fc129d91a8574c8392cc9651c726d742/artifacts
+end_time: 1759733832456
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fc129d91a8574c8392cc9651c726d742
+run_name: gregarious-sheep-63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759733832269
+status: 4
+tags: []
+user_id: dsgau

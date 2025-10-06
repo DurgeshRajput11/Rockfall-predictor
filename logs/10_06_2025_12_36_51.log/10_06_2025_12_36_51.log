@@ -1,0 +1,36 @@
+[ 2025-10-06 12:36:55,541 ] 20 root - INFO - Initiate the data ingestion
+[ 2025-10-06 12:36:59,590 ] 67 root - INFO - Performed train test split on the dataframe
+[ 2025-10-06 12:36:59,590 ] 68 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-10-06 12:36:59,590 ] 71 root - INFO - Exporting train and test file path.
+[ 2025-10-06 12:36:59,755 ] 78 root - INFO - Exported train and test file path.
+[ 2025-10-06 12:36:59,755 ] 22 root - INFO - Data Initiation Completed
+[ 2025-10-06 12:36:59,766 ] 26 root - INFO - Initiate the data Validation
+[ 2025-10-06 12:36:59,766 ] 96 root - INFO - --- Starting Data Validation ---
+[ 2025-10-06 12:36:59,861 ] 104 root - INFO - Validating number of columns...
+[ 2025-10-06 12:36:59,861 ] 51 root - INFO - Schema requires 17 columns.
+[ 2025-10-06 12:36:59,862 ] 52 root - INFO - DataFrame has 17 columns.
+[ 2025-10-06 12:36:59,862 ] 51 root - INFO - Schema requires 17 columns.
+[ 2025-10-06 12:36:59,862 ] 52 root - INFO - DataFrame has 17 columns.
+[ 2025-10-06 12:36:59,862 ] 64 root - INFO - Starting dataset drift detection...
+[ 2025-10-06 12:36:59,925 ] 87 root - INFO - Drift detection complete. Report saved to: Artifacts\10_06_2025_12_36_52\data_validation\drift_report\report.yaml
+[ 2025-10-06 12:36:59,925 ] 114 root - INFO - No significant data drift detected between train and test sets.
+[ 2025-10-06 12:37:00,102 ] 132 root - INFO - Data validation artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\10_06_2025_12_36_52\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\10_06_2025_12_36_52\\data_validation\\validated\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\10_06_2025_12_36_52\\data_validation\\drift_report\\report.yaml')
+[ 2025-10-06 12:37:00,102 ] 133 root - INFO - --- Data Validation Completed ---
+[ 2025-10-06 12:37:00,102 ] 28 root - INFO - data Validation Completed
+[ 2025-10-06 12:37:00,103 ] 31 root - INFO - data Transformation started
+[ 2025-10-06 12:37:00,103 ] 105 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-10-06 12:37:00,192 ] 45 root - INFO - Applying noise filters to sensor data...
+[ 2025-10-06 12:37:00,201 ] 45 root - INFO - Applying noise filters to sensor data...
+[ 2025-10-06 12:37:00,202 ] 71 root - INFO - Entered get_data_transformer_object method of DataTransformation class
+[ 2025-10-06 12:37:00,202 ] 91 root - INFO - Categorical columns: ['location_id', 'seismic_zone']
+[ 2025-10-06 12:37:00,202 ] 92 root - INFO - Numerical columns: ['3d_surface_coord_x', '3d_surface_coord_y', '3d_surface_coord_z', 'pore_pressure_kpa', 'subsurface_displacement_mm', 'precipitation_rate_mm_hr', 'ground_acceleration_g', 'realtime_water_table_m', 'cumulative_precip_72hr', 'cumulative_precip_168hr', 'ucs_mpa', 'pga_g', 'initial_water_table_m']
+[ 2025-10-06 12:37:00,203 ] 129 root - INFO - Applying preprocessing object on training and testing dataframes.
+[ 2025-10-06 12:37:00,244 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-06 12:37:00,247 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-06 12:37:00,247 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-06 12:37:00,247 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-06 12:37:00,247 ] 152 root - INFO - Data transformation artifact: DataTransformationArtifact(transformed_object_file_path='Artifacts\\10_06_2025_12_36_52\\data_transformation\\transformed_object\\preprocessing.pkl', transformed_train_file_path='Artifacts\\10_06_2025_12_36_52\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\10_06_2025_12_36_52\\data_transformation\\transformed\\test.npy')
+[ 2025-10-06 12:37:00,249 ] 35 root - INFO - data Transformation completed
+[ 2025-10-06 12:37:00,249 ] 37 root - INFO - Model Training sstared
+[ 2025-10-06 12:37:00,282 ] 51 root - INFO - Class distribution in y_train: {np.float64(0.0): np.int64(13818), np.float64(1.0): np.int64(6)}
+[ 2025-10-06 12:37:00,323 ] 56 root - INFO - Number of overlapping rows between train and test: 0

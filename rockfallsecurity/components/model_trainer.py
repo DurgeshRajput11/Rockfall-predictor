@@ -32,17 +32,12 @@ class ModelTrainer:
             raise RockfallSafetyException(e, sys)
 
     def track_mlflow(self, best_model, classification_metric):
-        mlflow.set_registry_uri("https://dagshub.com/your_dagshub_username/rockfall-security.mlflow")
-        tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
+        mlflow.set_tracking_uri("file:///./mlruns")
         with mlflow.start_run():
             mlflow.log_metric("f1_score", classification_metric.f1_score)
             mlflow.log_metric("precision", classification_metric.precision_score)
             mlflow.log_metric("recall_score", classification_metric.recall_score)
             mlflow.sklearn.log_model(best_model, "model")
-            if tracking_url_type_store != "file":
-                mlflow.sklearn.log_model(best_model, "model", registered_model_name=type(best_model).__name__)
-            else:
-                mlflow.sklearn.log_model(best_model, "model")
 
     def train_model(self, X_train, y_train, X_test, y_test):
         # Check class imbalance
@@ -55,10 +50,20 @@ class ModelTrainer:
         print(f"Number of overlapping rows between train and test: {len(overlap)}")
         logging.info(f"Number of overlapping rows between train and test: {len(overlap)}")
 
-        # Use only RandomForest and XGBoost with regularization/minimal grid
+        # Feature selection to reduce overfitting
+        from sklearn.feature_selection import SelectFromModel
+        selector = SelectFromModel(RandomForestClassifier(n_estimators=32, random_state=42, class_weight="balanced"), threshold="median")
+        selector.fit(X_train, y_train)
+        X_train_sel = selector.transform(X_train)
+        X_test_sel = selector.transform(X_test)
+        print(f"Selected {X_train_sel.shape[1]} features out of {X_train.shape[1]}")
+
+        n_pos = np.sum(y_train == 1)
+        n_neg = np.sum(y_train == 0)
+        scale_pos_weight = n_neg / max(n_pos, 1)
         models = {
-            "Random Forest": RandomForestClassifier(n_estimators=32, max_depth=5, random_state=42, n_jobs=-1),
-            "XGBoost": xgb.XGBClassifier(use_label_encoder=False, eval_metric='logloss', verbosity=1, n_estimators=32, max_depth=5, random_state=42)
+            "Random Forest": RandomForestClassifier(n_estimators=32, max_depth=5, random_state=42, n_jobs=-1, class_weight="balanced"),
+            "XGBoost": xgb.XGBClassifier(eval_metric='logloss', verbosity=1, n_estimators=32, max_depth=5, random_state=42, scale_pos_weight=scale_pos_weight)
         }
         params = {
             "Random Forest": {'n_estimators': [16, 32], 'max_depth': [3, 5]},
@@ -69,26 +74,42 @@ class ModelTrainer:
         if "XGBoost" in models:
             fit_params["XGBoost"] = {
                 "early_stopping_rounds": 10,
-                "eval_set": [(X_test, y_test)],
+                "eval_set": [(X_test_sel, y_test)],
                 "verbose": True
             }
         else:
             fit_params = None
 
-        model_report = evaluate_models(
-            X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test,
-            models=models, param=params, fit_params=fit_params
-        )
-        best_model_score = max(sorted(model_report.values()))
-        best_model_name = list(model_report.keys())[list(model_report.values()).index(best_model_score)]
-        best_model = models[best_model_name]
+        # Anomaly detection (IsolationForest only)
+        from sklearn.metrics import classification_report
+        from sklearn.ensemble import IsolationForest
+        iso = IsolationForest(contamination=n_pos/(n_pos+n_neg), random_state=42)
+        iso.fit(X_train_sel)
+        anomaly_pred = iso.predict(X_test_sel)
+        anomaly_pred_bin = np.where(anomaly_pred == -1, 1, 0)
+        print("\nIsolationForest anomaly detection report:")
+        print(classification_report(y_test, anomaly_pred_bin, zero_division=1))
+        best_model = iso
+        best_model_name = "IsolationForest"
 
-        # Ensure regularization: XGBoost uses default L2, RandomForest is robust by design
-        y_train_pred = best_model.predict(X_train)
+        # Anomaly detection (IsolationForest)
+        from sklearn.ensemble import IsolationForest
+        iso = IsolationForest(contamination=n_pos/(n_pos+n_neg), random_state=42)
+        iso.fit(X_train_sel)
+        anomaly_pred = iso.predict(X_test_sel)
+        # IsolationForest: -1 = anomaly, 1 = normal
+        # Map to binary: anomaly -> 1 (rockfall), normal -> 0
+        anomaly_pred_bin = np.where(anomaly_pred == -1, 1, 0)
+        from sklearn.metrics import classification_report
+        print("\nIsolationForest anomaly detection report:")
+        print(classification_report(y_test, anomaly_pred_bin, zero_division=1))
+
+        # Model evaluation and logging
+        y_train_pred = best_model.predict(X_train_sel)
         classification_train_metric = get_classification_score(y_true=y_train, y_pred=y_train_pred)
         self.track_mlflow(best_model, classification_train_metric)
 
-        y_test_pred = best_model.predict(X_test)
+        y_test_pred = best_model.predict(X_test_sel)
         classification_test_metric = get_classification_score(y_true=y_test, y_pred=y_test_pred)
         self.track_mlflow(best_model, classification_test_metric)
 

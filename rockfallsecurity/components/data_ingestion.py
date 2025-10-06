@@ -43,7 +43,7 @@ class DataIngestion:
             df.replace({"na":np.nan},inplace=True)
             return df
         except Exception as e:
-            raise RockfallSafetyException
+            raise RockfallSafetyException(e, sys)
         
     def export_data_into_feature_store(self,dataframe: pd.DataFrame):
         try:

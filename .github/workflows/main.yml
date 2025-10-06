@@ -25,6 +25,10 @@ jobs:
         with:
           python-version: '3.9'
 
+
+      - name: Create .env file with MongoDB URI
+        run: echo MONGO_DB_URL="${{ secrets.MONGO_DB_URL }}" > .env
+
       - name: Show requirements.txt
         run: cat requirements.txt
 

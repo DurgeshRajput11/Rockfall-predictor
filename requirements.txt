@@ -11,6 +11,13 @@ dagshub>=0.6.3
 imbalanced-learn==0.14.0
 mlflow>=3.4.0
 
+# Pin transitive dependencies to avoid pip resolution-too-deep errors
+Pillow==11.3.0
+pyasn1==0.6.1
+pyasn1-modules==0.4.2
+pydantic==2.11.10
+email-validator==2.3.0
+
 
 
 

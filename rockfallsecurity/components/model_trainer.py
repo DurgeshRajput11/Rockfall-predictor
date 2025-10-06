@@ -32,7 +32,7 @@ class ModelTrainer:
             raise RockfallSafetyException(e, sys)
 
     def track_mlflow(self, best_model, classification_metric):
-        mlflow.set_tracking_uri("file:///./mlruns")
+    # Tracking URI is set globally in main.py
         with mlflow.start_run():
             mlflow.log_metric("f1_score", classification_metric.f1_score)
             mlflow.log_metric("precision", classification_metric.precision_score)

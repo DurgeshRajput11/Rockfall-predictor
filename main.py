@@ -1,5 +1,7 @@
 import mlflow
 mlflow.set_tracking_uri("file:mlruns")
+import mlflow
+mlflow.set_tracking_uri("file:mlruns")
 from rockfallsecurity.components.data_ingestion import DataIngestion
 from rockfallsecurity.components.data_validation import DataValidation
 from rockfallsecurity.components.data_transformation import DataTransformation

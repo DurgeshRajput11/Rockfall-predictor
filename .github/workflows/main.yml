@@ -1,0 +1,54 @@
+# .github/workflows/cicd.yml
+
+name: Rockfall Security CI/CD Pipeline
+
+# This workflow triggers on any push or pull request to the 'main' branch
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  # The 'build' job will handle the entire CI process
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out your repository code
+      # This downloads your project code into the runner
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Python environment
+      # Specifies the Python version to use
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # Step 3: Install all project dependencies
+      # This command reads your requirements.txt file and installs the packages
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # Step 4: Run the Machine Learning Pipeline
+      # This is the main step that executes your training pipeline
+      - name: Run ML Training Pipeline
+        run: |
+          python main.py
+
+      # Optional Step 5: Commit Artifacts (if you want to save them back to the repo)
+      # This step will commit the trained model and preprocessor back to your repository.
+      # Note: This is good for demonstration but for large-scale projects, you would
+      # use a dedicated model registry like S3, MLflow, or DVC.
+      - name: Commit Trained Model and Artifacts
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add artifacts/
+          git commit -m "CI/CD: Add trained model and preprocessor artifacts" || echo "No changes to commit"
+          git push || echo "No changes to push"
+

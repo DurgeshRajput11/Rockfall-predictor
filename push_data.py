@@ -1,4 +1,5 @@
 import os 
+
 import sys 
 import json
 from dotenv import load_dotenv
@@ -9,14 +10,14 @@ ca=certifi.where()
 import pandas as pd
 import numpy as np 
 import pymongo
-from Rockfallpredictor.exception.exception import RockfallPredictorException
+from rockfallsecurity.exception.exception import RockfallSafetyException
 
 class RockfallDataExtract():
     def __init__(self):
         try:
             pass
         except Exception as e :
-            raise RockfallPredictorException(e,sys)
+            raise RockfallSafetyException(e,sys)
     
     def csv_to_json_converter(self,file_path):
         try:
@@ -25,7 +26,7 @@ class RockfallDataExtract():
             records=list(json.loads(data.T.to_json()).values())
             return records 
         except Exception as e :
-            raise RockfallPredictorException(e,sys)
+            raise RockfallSafetyException(e,sys)
     def insert_data_mongodb(self,records,database,collection):
         try:
             self.database=database
@@ -37,7 +38,7 @@ class RockfallDataExtract():
             self.collection.insert_many(self.records)
             return(len(self.records))
         except Exception as e :
-            raise RockfallPredictorException(e,sys)
+            raise RockfallSafetyException(e,sys)
         
 if __name__=='__main__':
     FILE_PATH="Rockfall_data/final_balanced_dataset.csv"

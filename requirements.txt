@@ -3,3 +3,10 @@ dnspython==1.16.0
 python-dotenv
 pymongo
 certifi
+xgboost
+PyYAML
+scikit
+numpy
+pandas
+mlflow
+dagshub

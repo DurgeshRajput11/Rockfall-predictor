@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/0935d4cbf1c6422e803a0e75def72a40/artifacts
+end_time: 1759825910366
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0935d4cbf1c6422e803a0e75def72a40
+run_name: auspicious-jay-851
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759825904117
+status: 3
+tags: []
+user_id: dsgau

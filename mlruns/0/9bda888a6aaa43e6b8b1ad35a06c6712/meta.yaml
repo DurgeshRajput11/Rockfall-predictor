@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/9bda888a6aaa43e6b8b1ad35a06c6712/artifacts
+end_time: 1759832889516
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9bda888a6aaa43e6b8b1ad35a06c6712
+run_name: capricious-lark-569
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759832882047
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/5a13c305695d40608f8e6916883c7f5b/artifacts
+end_time: 1759846112023
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5a13c305695d40608f8e6916883c7f5b
+run_name: fun-fawn-634
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759846106226
+status: 3
+tags: []
+user_id: dsgau

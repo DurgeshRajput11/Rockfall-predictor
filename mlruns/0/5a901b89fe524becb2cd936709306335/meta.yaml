@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/5a901b89fe524becb2cd936709306335/artifacts
+end_time: 1759863004661
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5a901b89fe524becb2cd936709306335
+run_name: gentle-toad-712
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759863000209
+status: 3
+tags: []
+user_id: dsgau

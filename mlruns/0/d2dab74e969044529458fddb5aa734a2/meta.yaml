@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/d2dab74e969044529458fddb5aa734a2/artifacts
+end_time: 1759845782966
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d2dab74e969044529458fddb5aa734a2
+run_name: welcoming-mink-475
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759845768942
+status: 3
+tags: []
+user_id: dsgau

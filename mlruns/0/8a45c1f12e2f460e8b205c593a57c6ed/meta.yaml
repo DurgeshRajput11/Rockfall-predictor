@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/8a45c1f12e2f460e8b205c593a57c6ed/artifacts
+end_time: 1759863064350
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8a45c1f12e2f460e8b205c593a57c6ed
+run_name: secretive-hen-150
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759863059642
+status: 3
+tags: []
+user_id: dsgau

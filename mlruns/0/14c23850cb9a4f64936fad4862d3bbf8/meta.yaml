@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/14c23850cb9a4f64936fad4862d3bbf8/artifacts
+end_time: 1759846099072
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 14c23850cb9a4f64936fad4862d3bbf8
+run_name: bustling-ray-995
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759846087535
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/6800eb00a84d4676bd8b81753efd9139/artifacts
+end_time: 1759823473393
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6800eb00a84d4676bd8b81753efd9139
+run_name: clumsy-pig-678
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759823466781
+status: 3
+tags: []
+user_id: dsgau

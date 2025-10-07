@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/30811ba5f6414bb08d48a947e13945da/artifacts
+end_time: 1759846087229
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 30811ba5f6414bb08d48a947e13945da
+run_name: silent-asp-445
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759846072161
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/43f836e677ff417da9573cdca7d94d2e/artifacts
+end_time: 1759863054718
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 43f836e677ff417da9573cdca7d94d2e
+run_name: gifted-gnu-387
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759863048723
+status: 3
+tags: []
+user_id: dsgau

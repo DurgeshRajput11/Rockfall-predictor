@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/23db361fb5fc467c9119ba141162e87d/artifacts
+end_time: 1759833869202
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 23db361fb5fc467c9119ba141162e87d
+run_name: able-worm-405
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759833830987
+status: 3
+tags: []
+user_id: dsgau

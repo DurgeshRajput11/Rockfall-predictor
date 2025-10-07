@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/978e5b7fbec4481fa47920a669f9455c/artifacts
+end_time: 1759864664947
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 978e5b7fbec4481fa47920a669f9455c
+run_name: upset-hen-528
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759864660647
+status: 3
+tags: []
+user_id: dsgau

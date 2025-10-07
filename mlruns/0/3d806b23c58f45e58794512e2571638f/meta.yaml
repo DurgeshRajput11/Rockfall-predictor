@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/3d806b23c58f45e58794512e2571638f/artifacts
+end_time: 1759845795379
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3d806b23c58f45e58794512e2571638f
+run_name: caring-grub-88
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759845790131
+status: 3
+tags: []
+user_id: dsgau

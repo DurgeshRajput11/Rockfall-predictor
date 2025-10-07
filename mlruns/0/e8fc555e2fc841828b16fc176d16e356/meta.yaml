@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/e8fc555e2fc841828b16fc176d16e356/artifacts
+end_time: 1759861694541
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e8fc555e2fc841828b16fc176d16e356
+run_name: worried-cow-752
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759861690272
+status: 3
+tags: []
+user_id: dsgau

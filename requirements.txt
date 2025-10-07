@@ -10,6 +10,7 @@ pandas>=2.3.3
 dagshub>=0.6.3
 imbalanced-learn==0.14.0
 mlflow>=3.4.0
+optuna>=3.6.0
 
 # Pin transitive dependencies to avoid pip resolution-too-deep errors
 Pillow==11.3.0

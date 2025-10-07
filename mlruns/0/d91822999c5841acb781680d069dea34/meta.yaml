@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/d91822999c5841acb781680d069dea34/artifacts
+end_time: 1759824368878
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d91822999c5841acb781680d069dea34
+run_name: rare-ape-245
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759824363958
+status: 3
+tags: []
+user_id: dsgau

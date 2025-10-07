@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/47c903ea796a4a758d1f8c92cbc8e7e6/artifacts
+end_time: 1759832863828
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 47c903ea796a4a758d1f8c92cbc8e7e6
+run_name: bustling-zebra-844
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759832845488
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/7baa0591b4934bc4a0f1b06182513ec4/artifacts
+end_time: 1759825924736
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7baa0591b4934bc4a0f1b06182513ec4
+run_name: masked-flea-806
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759825920443
+status: 3
+tags: []
+user_id: dsgau

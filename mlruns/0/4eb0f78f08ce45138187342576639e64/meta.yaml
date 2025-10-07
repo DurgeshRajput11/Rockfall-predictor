@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/4eb0f78f08ce45138187342576639e64/artifacts
+end_time: 1759846618312
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4eb0f78f08ce45138187342576639e64
+run_name: chill-mule-413
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759846613229
+status: 3
+tags: []
+user_id: dsgau

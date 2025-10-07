@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/65c9a14fc90245c69a79afddfa2758bd/artifacts
+end_time: 1759822888689
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 65c9a14fc90245c69a79afddfa2758bd
+run_name: respected-conch-67
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759822872169
+status: 3
+tags: []
+user_id: dsgau

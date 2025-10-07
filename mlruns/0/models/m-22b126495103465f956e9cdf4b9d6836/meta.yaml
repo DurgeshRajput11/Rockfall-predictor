@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/models/m-22b126495103465f956e9cdf4b9d6836/artifacts
+creation_timestamp: 1759832556928
+experiment_id: '0'
+last_updated_timestamp: 1759832566370
+model_id: m-22b126495103465f956e9cdf4b9d6836
+model_type: null
+name: model
+source_run_id: 2c238942145c4ed18db0a082145ed1d6
+status: 2
+status_message: null

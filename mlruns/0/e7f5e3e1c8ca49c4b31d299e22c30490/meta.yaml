@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/e7f5e3e1c8ca49c4b31d299e22c30490/artifacts
+end_time: 1759823447027
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e7f5e3e1c8ca49c4b31d299e22c30490
+run_name: hilarious-cow-44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759823442587
+status: 3
+tags: []
+user_id: dsgau

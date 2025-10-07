@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/a47ae349791f42efbf00b2c08c93e0c2/artifacts
+end_time: 1759861689755
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a47ae349791f42efbf00b2c08c93e0c2
+run_name: upset-grouse-127
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759861682594
+status: 3
+tags: []
+user_id: dsgau

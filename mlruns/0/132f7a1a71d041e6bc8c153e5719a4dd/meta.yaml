@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/132f7a1a71d041e6bc8c153e5719a4dd/artifacts
+end_time: 1759863059187
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 132f7a1a71d041e6bc8c153e5719a4dd
+run_name: silent-moose-993
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759863054868
+status: 3
+tags: []
+user_id: dsgau

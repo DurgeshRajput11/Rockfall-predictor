@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/5d3eb9a58c934acb9ce5a5a319b6cb07/artifacts
+end_time: 1759863009562
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5d3eb9a58c934acb9ce5a5a319b6cb07
+run_name: luminous-stag-178
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759863004867
+status: 3
+tags: []
+user_id: dsgau

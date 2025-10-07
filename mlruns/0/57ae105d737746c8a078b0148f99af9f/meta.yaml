@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/57ae105d737746c8a078b0148f99af9f/artifacts
+end_time: 1759864675500
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 57ae105d737746c8a078b0148f99af9f
+run_name: magnificent-crab-93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759864670498
+status: 3
+tags: []
+user_id: dsgau

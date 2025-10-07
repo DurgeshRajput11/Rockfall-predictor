@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/8112feef9a844fd1b47dac4176fc40aa/artifacts
+end_time: 1759862990969
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8112feef9a844fd1b47dac4176fc40aa
+run_name: bemused-goose-533
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759862984590
+status: 3
+tags: []
+user_id: dsgau

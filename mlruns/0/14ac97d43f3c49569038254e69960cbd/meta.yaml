@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/14ac97d43f3c49569038254e69960cbd/artifacts
+end_time: 1759863371252
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 14ac97d43f3c49569038254e69960cbd
+run_name: stately-donkey-263
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759863363642
+status: 3
+tags: []
+user_id: dsgau

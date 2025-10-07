@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/e8bd081d6575451191e8a104a0b2b36f/artifacts
+end_time: 1759861878042
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e8bd081d6575451191e8a104a0b2b36f
+run_name: ambitious-toad-391
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759861873621
+status: 3
+tags: []
+user_id: dsgau

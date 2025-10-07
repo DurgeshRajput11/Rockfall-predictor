@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/3371140beb2f4adda762b29249a6475f/artifacts
+end_time: 1759833030061
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3371140beb2f4adda762b29249a6475f
+run_name: nimble-ox-305
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759833017054
+status: 3
+tags: []
+user_id: dsgau

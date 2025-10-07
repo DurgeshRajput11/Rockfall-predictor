@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/40ebe425fb174faaaac4b8eed49342e7/artifacts
+end_time: 1759863069054
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 40ebe425fb174faaaac4b8eed49342e7
+run_name: worried-shrew-89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759863064365
+status: 3
+tags: []
+user_id: dsgau

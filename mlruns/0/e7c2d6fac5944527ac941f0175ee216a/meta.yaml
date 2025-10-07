@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/e7c2d6fac5944527ac941f0175ee216a/artifacts
+end_time: 1759862313630
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e7c2d6fac5944527ac941f0175ee216a
+run_name: salty-cod-530
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759862309464
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/90cb2cfdc0f545ef9722049cb67b02ad/artifacts
+end_time: 1759825732705
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 90cb2cfdc0f545ef9722049cb67b02ad
+run_name: bemused-doe-552
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759825728376
+status: 3
+tags: []
+user_id: dsgau

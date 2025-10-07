@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/836dacbf01cf45f8b74d1a9b5226a93a/artifacts
+end_time: 1759833886284
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 836dacbf01cf45f8b74d1a9b5226a93a
+run_name: shivering-goat-193
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759833869252
+status: 3
+tags: []
+user_id: dsgau

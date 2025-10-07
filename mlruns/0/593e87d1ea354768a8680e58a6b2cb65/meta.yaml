@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/593e87d1ea354768a8680e58a6b2cb65/artifacts
+end_time: 1759863074053
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 593e87d1ea354768a8680e58a6b2cb65
+run_name: legendary-stoat-217
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759863069265
+status: 3
+tags: []
+user_id: dsgau

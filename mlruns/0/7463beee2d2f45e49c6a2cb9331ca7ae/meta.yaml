@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/7463beee2d2f45e49c6a2cb9331ca7ae/artifacts
+end_time: 1759846623653
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7463beee2d2f45e49c6a2cb9331ca7ae
+run_name: puzzled-dog-306
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759846618330
+status: 3
+tags: []
+user_id: dsgau

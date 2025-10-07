@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/4b442da54ff14cd2af19cd39819e93b2/artifacts
+end_time: 1759846106205
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4b442da54ff14cd2af19cd39819e93b2
+run_name: unequaled-donkey-457
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759846099817
+status: 3
+tags: []
+user_id: dsgau

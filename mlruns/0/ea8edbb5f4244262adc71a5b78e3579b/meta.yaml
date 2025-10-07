@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/ea8edbb5f4244262adc71a5b78e3579b/artifacts
+end_time: 1759863389466
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ea8edbb5f4244262adc71a5b78e3579b
+run_name: angry-robin-937
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759863385202
+status: 3
+tags: []
+user_id: dsgau

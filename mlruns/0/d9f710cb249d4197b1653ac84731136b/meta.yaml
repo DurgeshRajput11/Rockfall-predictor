@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/d9f710cb249d4197b1653ac84731136b/artifacts
+end_time: 1759832578559
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d9f710cb249d4197b1653ac84731136b
+run_name: stately-smelt-26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759832568103
+status: 3
+tags: []
+user_id: dsgau

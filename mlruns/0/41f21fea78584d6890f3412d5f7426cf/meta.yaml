@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/41f21fea78584d6890f3412d5f7426cf/artifacts
+end_time: 1759861888106
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 41f21fea78584d6890f3412d5f7426cf
+run_name: abundant-hen-666
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759861883042
+status: 3
+tags: []
+user_id: dsgau

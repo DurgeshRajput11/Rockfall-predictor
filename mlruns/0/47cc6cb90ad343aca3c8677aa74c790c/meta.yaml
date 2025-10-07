@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/47cc6cb90ad343aca3c8677aa74c790c/artifacts
+end_time: 1759825404595
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 47cc6cb90ad343aca3c8677aa74c790c
+run_name: gifted-snipe-884
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759825400204
+status: 3
+tags: []
+user_id: dsgau

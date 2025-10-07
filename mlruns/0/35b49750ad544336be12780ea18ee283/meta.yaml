@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/35b49750ad544336be12780ea18ee283/artifacts
+end_time: 1759833897590
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 35b49750ad544336be12780ea18ee283
+run_name: hilarious-ram-200
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759833887680
+status: 3
+tags: []
+user_id: dsgau

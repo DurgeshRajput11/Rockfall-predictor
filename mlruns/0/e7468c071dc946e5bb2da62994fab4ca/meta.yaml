@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/e7468c071dc946e5bb2da62994fab4ca/artifacts
+end_time: 1759862299939
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e7468c071dc946e5bb2da62994fab4ca
+run_name: intelligent-snake-62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759862293597
+status: 3
+tags: []
+user_id: dsgau

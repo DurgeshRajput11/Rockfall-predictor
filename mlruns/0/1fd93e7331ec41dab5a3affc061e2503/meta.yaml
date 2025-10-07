@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/1fd93e7331ec41dab5a3affc061e2503/artifacts
+end_time: 1759832556551
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1fd93e7331ec41dab5a3affc061e2503
+run_name: overjoyed-moth-157
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759832496673
+status: 3
+tags: []
+user_id: dsgau

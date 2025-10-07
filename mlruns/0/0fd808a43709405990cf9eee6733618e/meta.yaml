@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/0fd808a43709405990cf9eee6733618e/artifacts
+end_time: 1759832882021
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0fd808a43709405990cf9eee6733618e
+run_name: dashing-steed-396
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759832872472
+status: 3
+tags: []
+user_id: dsgau

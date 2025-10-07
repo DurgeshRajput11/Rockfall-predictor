@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/10b8a13ae65d495eae082bc8cdf222c7/artifacts
+end_time: 1759833036875
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 10b8a13ae65d495eae082bc8cdf222c7
+run_name: blushing-hound-526
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759833030109
+status: 3
+tags: []
+user_id: dsgau

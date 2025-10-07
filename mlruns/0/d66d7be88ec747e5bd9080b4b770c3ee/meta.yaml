@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/d66d7be88ec747e5bd9080b4b770c3ee/artifacts
+end_time: 1759863385023
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d66d7be88ec747e5bd9080b4b770c3ee
+run_name: placid-wasp-474
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759863380658
+status: 3
+tags: []
+user_id: dsgau

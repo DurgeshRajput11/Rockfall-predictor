@@ -1,0 +1,67 @@
+3d_surface_coord_x:
+  drift_status: &id001 !!python/object/apply:numpy._core.multiarray.scalar
+  - &id002 !!python/object/apply:numpy.dtype
+    args:
+    - b1
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - '|'
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    AQ==
+  p_value: 0.0
+3d_surface_coord_y:
+  drift_status: *id001
+  p_value: 0.0
+3d_surface_coord_z:
+  drift_status: *id001
+  p_value: 0.0
+_summary:
+  drift_ratio: 0.6428571428571429
+  threshold: 0.05
+  total_checked: 14
+  total_drifted: 9
+  validation_status: false
+cumulative_precip_168hr:
+  drift_status: *id001
+  p_value: 0.0
+cumulative_precip_72hr:
+  drift_status: *id001
+  p_value: 0.0
+ground_acceleration_g:
+  drift_status: &id003 !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    AA==
+  p_value: 0.8414860175713152
+initial_water_table_m:
+  drift_status: *id003
+  p_value: 1.0
+pga_g:
+  drift_status: *id003
+  p_value: 1.0
+pore_pressure_kpa:
+  drift_status: *id001
+  p_value: 0.0
+precipitation_rate_mm_hr:
+  drift_status: *id001
+  p_value: 5.711873119365898e-274
+realtime_water_table_m:
+  drift_status: *id001
+  p_value: 0.0
+rockfall_event:
+  drift_status: *id003
+  p_value: 1.0
+subsurface_displacement_mm:
+  drift_status: *id001
+  p_value: 0.0
+ucs_mpa:
+  drift_status: *id003
+  p_value: 1.0

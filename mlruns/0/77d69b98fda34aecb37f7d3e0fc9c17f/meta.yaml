@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/77d69b98fda34aecb37f7d3e0fc9c17f/artifacts
+end_time: 1759825718382
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 77d69b98fda34aecb37f7d3e0fc9c17f
+run_name: peaceful-wolf-857
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759825711227
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/0b3518f2d5164254bd29c1c8c9cb139b/artifacts
+end_time: 1759863375771
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0b3518f2d5164254bd29c1c8c9cb139b
+run_name: puzzled-roo-754
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759863371464
+status: 3
+tags: []
+user_id: dsgau

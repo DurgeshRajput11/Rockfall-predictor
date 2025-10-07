@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/e47007804dfd436a9ae40bd5ee45497d/artifacts
+end_time: 1759861698910
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e47007804dfd436a9ae40bd5ee45497d
+run_name: rare-rook-179
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759861694552
+status: 3
+tags: []
+user_id: dsgau

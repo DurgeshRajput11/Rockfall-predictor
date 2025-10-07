@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/80802451c51142e6ab1f50c55ef7a9a3/artifacts
+end_time: 1759862304485
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 80802451c51142e6ab1f50c55ef7a9a3
+run_name: clean-bear-102
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759862300172
+status: 3
+tags: []
+user_id: dsgau

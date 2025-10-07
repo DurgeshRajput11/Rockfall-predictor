@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/a153eadffc2d4ea9a2a239b539b3045c/artifacts
+end_time: 1759832588170
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a153eadffc2d4ea9a2a239b539b3045c
+run_name: dapper-jay-627
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759832578587
+status: 3
+tags: []
+user_id: dsgau

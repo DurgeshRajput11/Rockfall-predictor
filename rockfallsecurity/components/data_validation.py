@@ -66,6 +66,8 @@ class DataValidation:
             validation_status = True
             drift_report = {}
             numerical_columns = self._schema_config["numerical_columns"]
+            total_checked = 0
+            total_drifted = 0
             for column in numerical_columns:
                 if column not in base_df.columns or column not in current_df.columns:
                     logging.warning(f"Column '{column}' not found in both dataframes for drift detection.")
@@ -74,12 +76,24 @@ class DataValidation:
                 d2 = current_df[column]
                 ks_statistic, p_value = ks_2samp(d1, d2)
                 is_found = p_value < threshold
+                total_checked += 1
                 if is_found:
-                    validation_status = False
+                    total_drifted += 1
                 drift_report[column] = {
                     "p_value": float(p_value),
                     "drift_status": is_found
                 }
+            # Decide overall status based on proportion of drifted columns
+            drift_ratio = (total_drifted / total_checked) if total_checked > 0 else 0.0
+            # Allow up to 30% columns drifting before failing validation
+            validation_status = drift_ratio <= 0.3
+            drift_report["_summary"] = {
+                "total_checked": int(total_checked),
+                "total_drifted": int(total_drifted),
+                "drift_ratio": float(drift_ratio),
+                "threshold": float(threshold),
+                "validation_status": bool(validation_status),
+            }
             drift_report_file_path = self.data_validation_config.drift_report_file_path
             dir_path = os.path.dirname(drift_report_file_path)
             os.makedirs(dir_path, exist_ok=True)

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/c54342410d144e2194fecb5ff44e2ce3/artifacts
+end_time: 1759822892334
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c54342410d144e2194fecb5ff44e2ce3
+run_name: abrasive-snail-195
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759822888701
+status: 3
+tags: []
+user_id: dsgau

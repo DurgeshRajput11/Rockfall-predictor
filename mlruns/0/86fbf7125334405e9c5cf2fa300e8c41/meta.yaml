@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/86fbf7125334405e9c5cf2fa300e8c41/artifacts
+end_time: 1759825390977
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 86fbf7125334405e9c5cf2fa300e8c41
+run_name: stylish-shoat-780
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759825383343
+status: 3
+tags: []
+user_id: dsgau

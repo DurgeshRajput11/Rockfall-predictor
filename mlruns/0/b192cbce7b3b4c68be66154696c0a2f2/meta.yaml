@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/b192cbce7b3b4c68be66154696c0a2f2/artifacts
+end_time: 1759833045217
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b192cbce7b3b4c68be66154696c0a2f2
+run_name: amazing-sow-229
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759833038166
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/2102ab3d4d844efa912ecbe4ae12fc6f/artifacts
+end_time: 1759864660495
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2102ab3d4d844efa912ecbe4ae12fc6f
+run_name: chill-cat-859
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759864652075
+status: 3
+tags: []
+user_id: dsgau

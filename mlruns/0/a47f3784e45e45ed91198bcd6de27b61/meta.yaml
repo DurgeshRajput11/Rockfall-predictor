@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/a47f3784e45e45ed91198bcd6de27b61/artifacts
+end_time: 1759825400184
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a47f3784e45e45ed91198bcd6de27b61
+run_name: invincible-foal-978
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759825395686
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/378e0d455141429c8cb423ccab3d0253/artifacts
+end_time: 1759861420868
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 378e0d455141429c8cb423ccab3d0253
+run_name: efficient-kit-446
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759861416648
+status: 3
+tags: []
+user_id: dsgau

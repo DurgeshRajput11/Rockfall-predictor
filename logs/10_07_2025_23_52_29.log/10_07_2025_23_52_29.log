@@ -1,0 +1,84 @@
+[ 2025-10-07 23:52:45,398 ] 22 root - INFO - Initiate the data ingestion
+[ 2025-10-07 23:53:02,048 ] 132 root - INFO - Used time-based split for train/test.
+[ 2025-10-07 23:53:02,048 ] 133 root - INFO - Performed train test split on the dataframe
+[ 2025-10-07 23:53:02,048 ] 134 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-10-07 23:53:02,049 ] 137 root - INFO - Exporting train and test file path.
+[ 2025-10-07 23:53:02,206 ] 144 root - INFO - Exported train and test file path.
+[ 2025-10-07 23:53:02,216 ] 24 root - INFO - Data Initiation Completed
+[ 2025-10-07 23:53:02,243 ] 28 root - INFO - Initiate the data Validation
+[ 2025-10-07 23:53:02,243 ] 110 root - INFO - --- Starting Data Validation ---
+[ 2025-10-07 23:53:02,318 ] 118 root - INFO - Validating number of columns...
+[ 2025-10-07 23:53:02,318 ] 51 root - INFO - Schema requires 17 columns.
+[ 2025-10-07 23:53:02,318 ] 52 root - INFO - DataFrame has 17 columns.
+[ 2025-10-07 23:53:02,318 ] 51 root - INFO - Schema requires 17 columns.
+[ 2025-10-07 23:53:02,318 ] 52 root - INFO - DataFrame has 17 columns.
+[ 2025-10-07 23:53:02,318 ] 64 root - INFO - Starting dataset drift detection...
+[ 2025-10-07 23:53:02,349 ] 101 root - INFO - Drift detection complete. Report saved to: Artifacts\10_07_2025_23_52_29\data_validation\drift_report\report.yaml
+[ 2025-10-07 23:53:02,349 ] 130 root - WARNING - Data drift detected! Check the drift report for details.
+[ 2025-10-07 23:53:02,533 ] 146 root - INFO - Data validation artifact: DataValidationArtifact(validation_status=False, valid_train_file_path='Artifacts\\10_07_2025_23_52_29\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\10_07_2025_23_52_29\\data_validation\\validated\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\10_07_2025_23_52_29\\data_validation\\drift_report\\report.yaml')
+[ 2025-10-07 23:53:02,533 ] 147 root - INFO - --- Data Validation Completed ---
+[ 2025-10-07 23:53:02,533 ] 30 root - INFO - data Validation Completed
+[ 2025-10-07 23:53:02,534 ] 33 root - INFO - data Transformation started
+[ 2025-10-07 23:53:02,534 ] 163 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-10-07 23:53:02,702 ] 45 root - INFO - Applying noise filters to sensor data...
+[ 2025-10-07 23:53:02,715 ] 45 root - INFO - Applying noise filters to sensor data...
+[ 2025-10-07 23:53:02,720 ] 121 root - INFO - Entered get_data_transformer_object method of DataTransformation class
+[ 2025-10-07 23:53:02,720 ] 149 root - INFO - Categorical columns: ['location_id', 'seismic_zone']
+[ 2025-10-07 23:53:02,721 ] 150 root - INFO - Numerical columns: ['3d_surface_coord_x', '3d_surface_coord_y', '3d_surface_coord_z', 'pore_pressure_kpa', 'subsurface_displacement_mm', 'precipitation_rate_mm_hr', 'ground_acceleration_g', 'realtime_water_table_m', 'cumulative_precip_72hr', 'cumulative_precip_168hr', 'ucs_mpa', 'pga_g', 'initial_water_table_m', 'realtime_minus_initial_water', 'disp_velocity', 'disp_acceleration', 'precipitation_rate_roll6', 'precipitation_rate_roll24', 'pore_pressure_roll6', 'pore_pressure_roll24', 'subsurface_displacement_roll6', 'subsurface_displacement_roll24', 'ground_acceleration_roll6', 'ground_acceleration_roll24']
+[ 2025-10-07 23:53:02,725 ] 190 root - INFO - Applying preprocessing object on training and testing dataframes.
+[ 2025-10-07 23:53:02,816 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-07 23:53:02,819 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-07 23:53:02,819 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-07 23:53:02,826 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-07 23:53:02,826 ] 226 root - INFO - Data transformation artifact: DataTransformationArtifact(transformed_object_file_path='Artifacts\\10_07_2025_23_52_29\\data_transformation\\transformed_object\\preprocessing.pkl', transformed_train_file_path='Artifacts\\10_07_2025_23_52_29\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\10_07_2025_23_52_29\\data_transformation\\transformed\\test.npy')
+[ 2025-10-07 23:53:02,826 ] 37 root - INFO - data Transformation completed
+[ 2025-10-07 23:53:02,826 ] 39 root - INFO - Model Training sstared
+[ 2025-10-07 23:53:02,864 ] 105 root - INFO - Class distribution in y_train: {np.float64(0.0): np.int64(11227), np.float64(1.0): np.int64(5)}
+[ 2025-10-07 23:53:02,900 ] 113 root - INFO - Number of overlapping rows between train and test: 0
+[ 2025-10-07 23:53:31,698 ] 557 root - ERROR - XGBoost training failed: Error occured in python script name [C:\Users\dsgau\RockFall-Predictor\rockfallsecurity\utils\ml_utils\metric\classification_metric.py] line number [8] error message [Found input variables with inconsistent numbers of samples: [6048, 6070]]
+Traceback (most recent call last):
+  File "C:\Users\dsgau\RockFall-Predictor\rockfallsecurity\utils\ml_utils\metric\classification_metric.py", line 8, in get_classification_score
+    model_f1_score = f1_score(y_true, y_pred, average='macro')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py", line 1324, in f1_score
+    return fbeta_score(
+           ^^^^^^^^^^^^
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 189, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py", line 1517, in fbeta_score
+    _, _, f, _ = precision_recall_fscore_support(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_param_validation.py", line 189, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py", line 1830, in precision_recall_fscore_support
+    labels = _check_set_wise_labels(y_true, y_pred, average, labels, pos_label)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py", line 1596, in _check_set_wise_labels
+    y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\metrics\_classification.py", line 98, in _check_targets
+    check_consistent_length(y_true, y_pred)
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\validation.py", line 475, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [6048, 6070]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dsgau\RockFall-Predictor\rockfallsecurity\components\model_trainer.py", line 537, in train_model
+    cls_metric_test_xgb = get_classification_score(y_true=y_test, y_pred=y_pred_test_xgb)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dsgau\RockFall-Predictor\rockfallsecurity\utils\ml_utils\metric\classification_metric.py", line 18, in get_classification_score
+    raise RockfallSafetyException(e, sys)
+rockfallsecurity.exception.exception.RockfallSafetyException: Error occured in python script name [C:\Users\dsgau\RockFall-Predictor\rockfallsecurity\utils\ml_utils\metric\classification_metric.py] line number [8] error message [Found input variables with inconsistent numbers of samples: [6048, 6070]]
+[ 2025-10-07 23:53:40,889 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-07 23:53:40,889 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-07 23:53:40,889 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-10-07 23:53:40,897 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-10-07 23:53:40,897 ] 698 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\10_07_2025_23_52_29\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.5742418836960399, precision_score=0.542767833220633, recall_score=0.798574864166741), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.5996702390766694, precision_score=0.5996702390766694, recall_score=0.5996702390766694))
+[ 2025-10-07 23:53:40,901 ] 44 root - INFO - Model Training artifact created

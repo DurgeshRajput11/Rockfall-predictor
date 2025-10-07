@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/d18ffad4ea8346488dc161ea40d9b5ff/artifacts
+end_time: 1759864681164
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d18ffad4ea8346488dc161ea40d9b5ff
+run_name: resilient-stoat-377
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759864675801
+status: 3
+tags: []
+user_id: dsgau

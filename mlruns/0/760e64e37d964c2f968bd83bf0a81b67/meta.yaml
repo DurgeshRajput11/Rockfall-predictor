@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/760e64e37d964c2f968bd83bf0a81b67/artifacts
+end_time: 1759832871586
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 760e64e37d964c2f968bd83bf0a81b67
+run_name: luminous-fox-1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759832863849
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/b8e8754c20514c2fbcb5ec78fc7029ee/artifacts
+end_time: 1759862995307
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b8e8754c20514c2fbcb5ec78fc7029ee
+run_name: omniscient-vole-265
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759862991151
+status: 3
+tags: []
+user_id: dsgau

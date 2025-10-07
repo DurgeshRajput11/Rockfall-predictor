@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/af719a929d27451db83f197f8824e18d/artifacts
+end_time: 1759823478095
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: af719a929d27451db83f197f8824e18d
+run_name: flawless-lark-317
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759823473407
+status: 3
+tags: []
+user_id: dsgau

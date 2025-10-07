@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/a2f9eb2f88154ea08c9ecf92d4816db1/artifacts
+end_time: 1759825914876
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a2f9eb2f88154ea08c9ecf92d4816db1
+run_name: secretive-finch-382
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759825910379
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,32 @@
+artifact_path: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/models/m-e19f20cc645d465eaf3ea50b2c8dfe4b/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 3.4.0
+model_id: m-e19f20cc645d465eaf3ea50b2c8dfe4b
+model_size_bytes: 1467282
+model_uuid: m-e19f20cc645d465eaf3ea50b2c8dfe4b
+prompts: null
+run_id: 7272886788854932adc2b7e9a346980e
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: ndarray
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 10]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-10-07 08:06:09.374333'

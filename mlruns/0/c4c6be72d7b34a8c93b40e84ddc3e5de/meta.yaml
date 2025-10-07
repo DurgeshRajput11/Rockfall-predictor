@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/c4c6be72d7b34a8c93b40e84ddc3e5de/artifacts
+end_time: 1759846053734
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c4c6be72d7b34a8c93b40e84ddc3e5de
+run_name: dashing-asp-757
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759846019958
+status: 3
+tags: []
+user_id: dsgau

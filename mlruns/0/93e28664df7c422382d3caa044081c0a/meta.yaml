@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/93e28664df7c422382d3caa044081c0a/artifacts
+end_time: 1759861411696
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 93e28664df7c422382d3caa044081c0a
+run_name: brawny-fish-743
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759861394657
+status: 3
+tags: []
+user_id: dsgau

@@ -1,0 +1,29 @@
+[ 2025-10-07 14:06:26,438 ] 22 root - INFO - Initiate the data ingestion
+[ 2025-10-07 15:09:40,127 ] 104 pymongo.client - ERROR - MongoClient background task encountered an error:
+pymongo.errors.AutoReconnect: connection pool paused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2234, in _process_kill_cursors
+    self._kill_cursors(cursor_ids, address, topology, session=None)
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2185, in _kill_cursors
+    with self._checkout(server, session) as conn:
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1777, in _checkout
+    with server.checkout(handler=err_handler) as conn:
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\pool.py", line 1118, in checkout
+    conn = self._get_conn(checkout_started_time, handler=handler)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\pool.py", line 1234, in _get_conn
+    self._raise_if_not_ready(checkout_started_time, emit_event=True)
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\synchronous\pool.py", line 1186, in _raise_if_not_ready
+    _raise_connection_failure(
+  File "C:\Users\dsgau\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\pool_shared.py", line 150, in _raise_connection_failure
+    raise AutoReconnect(msg) from error
+pymongo.errors.AutoReconnect: ac-eyoczpe-shard-00-01.9kwyw2n.mongodb.net:27017: connection pool paused (configured timeouts: connectTimeoutMS: 20000.0ms)

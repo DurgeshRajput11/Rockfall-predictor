@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: write
+
 jobs:
   # The 'build' job will handle the entire CI process
   build:
@@ -48,15 +51,39 @@ jobs:
         run: |
           python main.py
 
+      - name: Upload Training Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: training-artifacts
+          path: |
+            Artifacts/**
+            final_model/**
+            mlruns/**
+          if-no-files-found: ignore
+          retention-days: 7
+
       # Optional Step 5: Commit Artifacts (if you want to save them back to the repo)
       # This step will commit the trained model and preprocessor back to your repository.
       # Note: This is good for demonstration but for large-scale projects, you would
       # use a dedicated model registry like S3, MLflow, or DVC.
       - name: Commit Trained Model and Artifacts
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add artifacts/
-          git commit -m "CI/CD: Add trained model and preprocessor artifacts" || echo "No changes to commit"
-          git push || echo "No changes to push"
+          # Prepare directories list (case-sensitive on Linux)
+          ARTS=("Artifacts/" "final_model/" "mlruns/")
+          ANY=false
+          for P in "${ARTS[@]}"; do
+            if [ -d "$P" ] || [ -f "$P" ]; then
+              git add "$P"
+              ANY=true
+            fi
+          done
+          if [ "$ANY" = true ]; then
+            git commit -m "CI/CD: Add trained model and artifacts" || echo "No changes to commit"
+            git push || echo "No changes to push"
+          else
+            echo "No artifact directories found to commit. Skipping."
+          fi
 

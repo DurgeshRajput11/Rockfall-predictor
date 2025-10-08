@@ -145,14 +145,13 @@ class ModelTrainer:
                         mlflow.log_metric(k, float(v))
                     except Exception:
                         pass
-            # Signature
-            try:
-                from mlflow.models.signature import infer_signature
-                signature = infer_signature(X_example, best_model.predict(X_example) if X_example is not None else None)
-            except Exception:
-                signature = None
+            # Minimal model logging to avoid filesystem quirks in different OS environments
             # Use 'name' instead of deprecated 'artifact_path'
-            mlflow.sklearn.log_model(best_model, name="model", signature=signature, input_example=X_example)
+            try:
+                mlflow.sklearn.log_model(best_model, name="model")
+            except Exception:
+                # Fallback: skip model logging if environment blocks artifact writes (CI), but continue logging metrics
+                pass
             # Optional text artifacts (e.g., reports, confusion matrices)
             if artifacts:
                 for name, content in artifacts.items():

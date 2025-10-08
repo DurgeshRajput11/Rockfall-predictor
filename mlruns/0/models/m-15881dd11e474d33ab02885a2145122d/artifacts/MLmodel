@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/models/m-15881dd11e474d33ab02885a2145122d/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.0
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 3.4.0
+model_id: m-15881dd11e474d33ab02885a2145122d
+model_size_bytes: 494289
+model_uuid: m-15881dd11e474d33ab02885a2145122d
+prompts: null
+run_id: 5b3464d8f6544b44817e749df053a0de
+utc_time_created: '2025-10-08 10:36:52.498277'

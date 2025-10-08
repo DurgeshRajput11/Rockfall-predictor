@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/f74298b66ab946dc8da13752b85cd427/artifacts
+end_time: 1759919835821
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f74298b66ab946dc8da13752b85cd427
+run_name: aged-pug-205
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759919831777
+status: 3
+tags: []
+user_id: dsgau

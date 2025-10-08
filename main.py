@@ -1,5 +1,20 @@
 import mlflow
-mlflow.set_tracking_uri("file:mlruns")
+import os
+from pathlib import Path
+
+# Force MLflow to use a cross-platform local file store under the repo
+try:
+    mlruns_path = (Path.cwd() / "mlruns").resolve()
+    mlruns_path.mkdir(parents=True, exist_ok=True)
+    mlflow_uri = mlruns_path.as_uri()  # e.g., file:///home/runner/.../mlruns or file:///C:/Users/.../mlruns
+    # Clear any inherited env var pointing to a Windows path on Linux
+    os.environ.pop("MLFLOW_TRACKING_URI", None)
+    os.environ.pop("MLFLOW_REGISTRY_URI", None)
+    mlflow.set_tracking_uri(mlflow_uri)
+    mlflow.set_registry_uri(mlflow_uri)
+except Exception:
+    # Safe fallback to relative path if as_uri fails for any reason
+    mlflow.set_tracking_uri("file:mlruns")
 from rockfallsecurity.components.data_ingestion import DataIngestion
 from rockfallsecurity.components.data_validation import DataValidation
 from rockfallsecurity.components.data_transformation import DataTransformation

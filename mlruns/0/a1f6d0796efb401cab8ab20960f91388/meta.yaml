@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/a1f6d0796efb401cab8ab20960f91388/artifacts
+end_time: 1759919844190
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a1f6d0796efb401cab8ab20960f91388
+run_name: nervous-snake-127
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759919840088
+status: 3
+tags: []
+user_id: dsgau

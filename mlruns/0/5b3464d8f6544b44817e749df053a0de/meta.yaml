@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/5b3464d8f6544b44817e749df053a0de/artifacts
+end_time: 1759919826913
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5b3464d8f6544b44817e749df053a0de
+run_name: grandiose-bear-626
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759919811926
+status: 3
+tags: []
+user_id: dsgau

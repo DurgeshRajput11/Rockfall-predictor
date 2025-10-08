@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/b319ac00a0b941898c9e354d59f877d0/artifacts
+end_time: 1759919839893
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b319ac00a0b941898c9e354d59f877d0
+run_name: upset-turtle-871
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759919835828
+status: 3
+tags: []
+user_id: dsgau

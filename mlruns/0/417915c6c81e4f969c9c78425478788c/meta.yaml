@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/417915c6c81e4f969c9c78425478788c/artifacts
+end_time: 1759931092837
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 417915c6c81e4f969c9c78425478788c
+run_name: sneaky-bug-407
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759931090908
+status: 3
+tags: []
+user_id: runner

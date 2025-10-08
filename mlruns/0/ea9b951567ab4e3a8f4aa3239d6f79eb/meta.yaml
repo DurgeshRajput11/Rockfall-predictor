@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/ea9b951567ab4e3a8f4aa3239d6f79eb/artifacts
+end_time: 1759931088713
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ea9b951567ab4e3a8f4aa3239d6f79eb
+run_name: grandiose-hog-511
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759931086558
+status: 3
+tags: []
+user_id: runner

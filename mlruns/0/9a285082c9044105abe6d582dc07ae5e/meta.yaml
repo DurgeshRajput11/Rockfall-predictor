@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/9a285082c9044105abe6d582dc07ae5e/artifacts
+end_time: 1760182679983
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9a285082c9044105abe6d582dc07ae5e
+run_name: resilient-croc-60
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760182678084
+status: 3
+tags: []
+user_id: runner

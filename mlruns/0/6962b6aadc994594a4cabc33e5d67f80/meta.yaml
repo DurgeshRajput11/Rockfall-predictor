@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/6962b6aadc994594a4cabc33e5d67f80/artifacts
+end_time: 1760182682278
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6962b6aadc994594a4cabc33e5d67f80
+run_name: placid-rook-166
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760182680311
+status: 3
+tags: []
+user_id: runner

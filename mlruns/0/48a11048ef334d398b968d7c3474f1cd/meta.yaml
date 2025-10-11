@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/dsgau/RockFall-Predictor/mlruns/0/48a11048ef334d398b968d7c3474f1cd/artifacts
+end_time: 1760182684256
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 48a11048ef334d398b968d7c3474f1cd
+run_name: mercurial-lark-587
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760182682319
+status: 3
+tags: []
+user_id: runner
